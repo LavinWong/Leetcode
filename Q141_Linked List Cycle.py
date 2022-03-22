@@ -33,10 +33,11 @@ class Solution:
 ################################################
 #Other way
 class Solution:
-    def hasCycle(self, head: Optional[ListNode]) -> bool:
-        S=set()
+    def hasCycle(self, head):
+        D={}
         while head:
-            if head in S: return True
-            S.add(head)
+            if head in D: 
+                return True
+            D[head]=True
             head=head.next
         return False
