@@ -25,8 +25,8 @@ class Solution:
                 if target > nums[mid]:
                     left = mid + 1
                     
-                #If the target is smaller than nums[mid] and smaller than nums[left] we look
-                #left
+                #If the target is smaller than nums[mid] and smaller than nums[left] we look right
+                
                 elif target < nums[mid] and target < nums[left]:
                     left = mid + 1
                 
