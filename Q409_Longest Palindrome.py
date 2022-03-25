@@ -21,12 +21,16 @@ class Solution(object):
                 
         odds.sort(reverse = True)
         res = 0
+        #we want to use odds element as much as possible
         for i in odds:
+            #we just use all the first odd element
             if res == 0:
                 res += i
             else:
+                #if i == 1, nothing we can use
                 if i == 1:
                     break
+                #we can use even number of the odds elements
                 res += (i-1)
         res += sum(evens)
         return res
