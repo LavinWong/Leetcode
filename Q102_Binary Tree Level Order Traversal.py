@@ -21,7 +21,7 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         if root is None:
-			return root
+		return root
         result = []
         self.breadth_first_search(root, result, 0)
         return result
