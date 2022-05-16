@@ -38,8 +38,7 @@ class RandomizedSet(object):
         if self.len < 1:
             return False
         else:
-            n = random.randint(0,self.len-1)
-            return self.list[n]
+            return random.choice(self.list)
         
 
 
