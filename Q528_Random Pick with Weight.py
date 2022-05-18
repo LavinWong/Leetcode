@@ -77,7 +77,14 @@ class Solution(object):
             else:
                 right = mid - 1
         return left
-
+        #   1       6       3    | weights
+        #   1       7       10   | sum sequence
+        # (0,1)   (1,7)   (7,10) | range of sum sequnce index
+        
+        # when the random index fits in that range of sum sequnce index
+        # we then return the index of that weight that we find when the
+        # condition (sum sequence value >= random_index) is satisfied 
+        # and left contains the index of weight that satisfies the condition
 # Your Solution object will be instantiated and called as such:
 # obj = Solution(w)
 # param_1 = obj.pickIndex()
